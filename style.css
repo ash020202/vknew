@@ -1,0 +1,57 @@
+body {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #FFC107, #E91E63, #9C27B0, #03A9F4);
+    background-size: 400% 400%;
+    animation: gradientMotion 10s ease infinite;
+      
+  }
+  
+  .container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  #message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+
+  @keyframes gradientMotion {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
