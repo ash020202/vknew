@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    header{
+        
+    padding:20px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top:0;
+    width: 100vw;
+    font-weight:bold;
+    }
+    header ul{
+        display: flex;
+        justify-content: end;
+
+    }
+    header ul li{
+        list-style: none;
+        padding:0px 20px;
+    }
+    header ul li a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    a::after{
+        content: "";
+        background:linear-gradient(to right,rgb(12, 194, 12),yellow);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 3px;
+    }
+   
+    a:hover{
+        color: black;
+    }
+    ul:hover li a:not(:hover){
+        opacity: 0.3;
+        filter: blur(2px);
+    }
+     
+    a:hover::after{
+        width:100%;
+        transition: all .5s ease-in;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+
+    
+
+div{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+#home{
+    background-color:lightcoral;
+}
+#product{
+    background-color:lightyellow;
+}
+#pricing{
+    background-color:lightskyblue;
+}
+#contact{
+    background-color: lightgreen;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <div id="home">Home 
+    </div>
+    <div id="product">Product
+    </div>
+    <div id="pricing">Pricing</div>
+    <div id="contact">Contact</div>
+    
+</body>
+</html>
